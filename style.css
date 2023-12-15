@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    color: rgb(11, 11, 63);
+    background-color: blanchedalmond;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: rgb(223, 31, 31);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* main-nav  */
+nav {
+    background-color: antiquewhite;
+    position: sticky;
+
+
+}
+
+.main-nav {
+
+    justify-content: space-between;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.company-logo img {
+    border-radius: 90px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px
+}
+
+.primary-button {
+    background-color: blue;
+    color: white;
+    padding: 10px
+}
+
+.secondary-button {
+    background-color: rgb(200, 24, 24);
+    color: white;
+    padding: 10px
+}
+
+.primary-button li a:hover {
+    color: white
+}
+
+.secondary-button li a:hover {
+    color: white
+}
+
+/* header  */
+header {
+    padding: 50px;
+
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-right img {
+    width: 600px;
+    border-radius: 290px;
+}
+
+.get-started {
+    margin-top: 10px;
+}
+
+/* companies section  */
+.small-bold-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    display: flex;
+
+}
+
+.logos {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* .feature-section  */
+
+.features-header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.features-section {
+    margin-top: 50px;
+}
+
+.features-card {
+    max-width: 40%;
+}
+
+/*big feature-section  */
+.fbs {
+    margin-top: 40px;
+}
+
+.big-features-section {
+    margin-top: 50px
+}
+
+.feature-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+}
+
+.feature-img img {
+    width: 600px;
+    border-radius: 200px;
+}
+
+/* cta  */
+.cta-section {
+    margin-top: 30px;
+
+}
+
+
+
+.cta-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cta-img {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.ctimg {
+    background: url(./img/cta.jpg);
+    height: 250px;
+    background-position: bottom;
+    width: 23%;
+    color: rgb(240, 237, 237);
+    opacity: .9;
+    display: flex;
+    align-items: flex-end;
+    transition: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.ctimg:hover {
+    opacity: 0.9;
+    background: linear-gradient(rgb(45, 20, 96), rgb(49, 5, 5));
+    color: rgb(250, 245, 245);
+    align-items: center;
+    transform: scaley(1.1);
+
+}
+
+/* footer  */
+footer {
+    background-color: rgb(16, 16, 84);
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white
+}
+
+.last-para {
+    margin-top: 20px
+}
+
+.footer-img {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-evenly;
+
+}
+
+/* uitility classes  */
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hover-links:hover {
+    color: red
+}
+
+/* responsive  */
+/* nav  */
+@media screen and (max-width:530px) {
+
+    .main-nav,
+    .nav-links ul,
+    .header-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-right {
+        width: auto
+    }
+
+    .big-feature-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .resimg {
+        max-width: 100%;
+
+        height: auto;
+    }
+
+    .ctimg {
+        width: 40%;
+    }
+
+    .cta-img {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
